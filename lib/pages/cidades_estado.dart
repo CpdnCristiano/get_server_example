@@ -7,9 +7,7 @@ class CitysFromState extends GetView {
   build(Context context) {
     List<String> cidades = repository.citysFromState(context.param('id'));
     if (cidades.isEmpty) {
-      return context.send(
-        'Não foi encotrado',
-      );
+      return context.response.status(404).send('Estado não encontrado');
     } else {
       return context.sendJson(cidades);
     }
