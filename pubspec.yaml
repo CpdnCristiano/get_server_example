@@ -1,5 +1,6 @@
-name: web_test
+name: api_cidades_br
 
 dependencies:
-  get_server:
-  path: 
+  path: 1.7.0
+  get_server: 
+    git: https://github.com/CpdnCristiano/get_server.git

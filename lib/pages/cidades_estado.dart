@@ -1,5 +1,6 @@
+import 'package:api_cidades_br/data/repository/state_repository.dart';
+import 'package:api_cidades_br/widget/404_error.dart';
 import 'package:get_server/get_server.dart';
-import 'package:web_test/repository/state_repository.dart';
 
 class CitysFromState extends GetView {
   Repository repository = Repository();
@@ -7,9 +8,9 @@ class CitysFromState extends GetView {
   build(Context context) {
     List<String> cidades = repository.citysFromState(context.param('id'));
     if (cidades.isEmpty) {
-      return context.response.status(404).send('Estado não encontrado');
+      return Error404(context, erro: 'Estado não encontrado');
     } else {
-      return context.sendJson(cidades);
+      return Json(cidades);
     }
   }
 }
