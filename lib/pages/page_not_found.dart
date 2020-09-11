@@ -4,6 +4,6 @@ import 'package:get_server/get_server.dart';
 class PageNotFound extends GetView {
   @override
   build(Context context) {
-    return Error404(context, erro: 'Url não encontrada');
+    return Error404(context, 'Url não encontrada');
   }
 }

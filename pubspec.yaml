@@ -1,6 +1,7 @@
 name: api_cidades_br
+version: 1.0.1
 
 dependencies:
   path: 1.7.0
   get_server: 
-    git: https://github.com/CpdnCristiano/get_server.git
+    git: https://github.com/jonataslaw/get_server.git

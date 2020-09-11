@@ -1,6 +1,10 @@
+import 'dart:io';
+
 import 'package:get_server/get_server.dart';
 
-class Error404 extends CustomResponse {
-  Error404(Context context, {String erro = 'Página não encontrada'})
-      : super(() => context.response.status(404).send(erro)) {}
+class Error404 extends WidgetBuilder {
+  Error404(Context context, String erro)
+      : super(context,
+            builder: (_) =>
+                context.response.status(HttpStatus.notFound).send(erro));
 }
