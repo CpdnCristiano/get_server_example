@@ -1,6 +1,5 @@
 import 'package:api_cidades_br/data/repository/state_repository.dart';
 import 'package:api_cidades_br/widget/404_error.dart';
-import 'package:api_cidades_br/widget/pageable.dart';
 import 'package:get_server/get_server.dart';
 
 class CitysFromState extends GetView {
@@ -9,9 +8,9 @@ class CitysFromState extends GetView {
   build(Context context) {
     List<String> cidades = repository.citysFromState(context.param('id'));
     if (cidades.isEmpty) {
-      return Error404(context, 'Estado não encontrado');
+      return Error404('Estado não encontrado');
     } else {
-      return Pageable(context, cidades);
+      return Pageable(cidades);
     }
   }
 }

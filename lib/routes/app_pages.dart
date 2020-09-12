@@ -12,7 +12,5 @@ class AppPages {
     GetPage(name: Routes.HOME, page: HomePage()),
     GetPage(name: Routes.STATES, page: AllState()),
     GetPage(name: Routes.CITYS, page: CitysFromState()),
-    // this not work
-    //GetPage(name: '/*', page: PageNotFoud()),
   ];
 }

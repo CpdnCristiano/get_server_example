@@ -3,6 +3,8 @@ import 'package:get_server/get_server.dart';
 class HomePage extends GetView {
   @override
   build(Context context) {
+    //context.send('Send interceptou e erro');
+
     return HtmlText('''  
    <!DOCTYPE html>
 <html>
@@ -14,7 +16,6 @@ class HomePage extends GetView {
 <p> Essa é a home </p>
 </body>
 </html>
-
     ''');
   }
 }
