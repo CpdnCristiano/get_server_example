@@ -7,6 +7,7 @@ import 'package:get_server/get_server.dart';
 void main() {
   runApp(GetServer(
     port: int.tryParse(Platform.environment['PORT'] ?? '8000'),
+    host: '0.0.0.0',
     getPages: AppPages.routes,
     onNotFound: PageNotFound(),
   ));
