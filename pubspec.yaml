@@ -6,5 +6,5 @@ environment:
 
 dependencies:
   path: 1.7.0
-  get_server:  g
+  get_server: 
     git: https://github.com/CpdnCristiano/get_server
