@@ -7,7 +7,8 @@ class Error404 extends GetWidget {
   Error404(this.erro);
 
   @override
-  Future build(Context context) {
-    return context.response.status(404).send(erro);
+  build(BuildContext context) {
+    context.statusCode(404);
+    return Json({});
   }
 }

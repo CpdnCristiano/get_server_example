@@ -2,7 +2,7 @@ import 'package:get_server/get_server.dart';
 
 class HomePage extends GetView {
   @override
-  build(Context context) {
+  build(BuildContext context) {
     //context.send('Send interceptou e erro');
 
     return HtmlText('''  

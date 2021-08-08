@@ -1,7 +1,10 @@
 name: api_cidades_br
 version: 1.0.2
 
+environment:
+  sdk: '>=2.10.0 <3.0.0'
+
 dependencies:
   path: 1.7.0
-  get_server:  
-    path: /Users/cristianonascimento/get_server_fork
+  get_server:  g
+    git: https://github.com/CpdnCristiano/get_server
